@@ -6,7 +6,7 @@ Symmetrise::usage = "Construct a symmetric matrix from an upper triangular matri
 
 ElasticEnergy::usage = "Calculate the free energy formula."
 
-Sij::usage = "Calculate S[i, j]."
+Sij::usage = "Calculate matrix element S[i, j]."
 
 S::usage = "Calculate matrix S."
 
@@ -19,7 +19,7 @@ Symmetrise[upperTriMatrix_] :=
     UpperTriangularize[upperTriMatrix, 1] + Transpose[upperTriMatrix]
 
 ElasticEnergy[c_] :=
-    \[Epsilon] . c . \[Epsilon] / 2
+    \[Epsilon] . c . \[Epsilon] / 2 // Expand
 
 Sij[f_, \[Epsilon]i_, cj_] :=
     D[f, \[Epsilon]i, cj]
