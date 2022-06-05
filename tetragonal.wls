@@ -5,7 +5,7 @@ Clear["Global`*"]
 
 SetDirectory[NotebookDirectory[]];
 
-<<sij`
+<<Sij`
 
 tet = {{c11, c12, c13, 0, 0, 0}, {0, c11, c13, 0, 0, 0}, {0, 0, c33, 
         0, 0, 0}, {0, 0, 0, c44, 0, 0}, {0, 0, 0, 0, c44, 0}, {0, 0, 0, 0, 0,

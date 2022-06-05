@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-BeginPackage["sij`"]
+BeginPackage["Sij`"]
 
 Symmetrise::usage = "Construct a symmetric matrix from an upper triangular matrix."
 

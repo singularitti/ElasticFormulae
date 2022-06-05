@@ -5,7 +5,7 @@ Clear["Global`*"]
 
 SetDirectory[NotebookDirectory[]];
 
-<<sij`
+<<Sij`
 
 mono = {{c11, c12, c13, 0, c15, 0}, {0, c22, c23, 0, c25, 0}, {0, 0, 
     c33, 0, c35, 0}, {0, 0, 0, c44, 0, c46}, {0, 0, 0, 0, c55, 0}, {0, 0,

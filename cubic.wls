@@ -5,7 +5,7 @@ Clear["Global`*"]
 
 SetDirectory[NotebookDirectory[]];
 
-<<sij`
+<<Sij`
 
 cubic = {{c11, c12, c12, 0, 0, 0}, {0, c11, c12, 0, 0, 0}, {0, 0, c11,
         0, 0, 0}, {0, 0, 0, c44, 0, 0}, {0, 0, 0, 0, c44, 0}, {0, 0, 0, 0, 0,
