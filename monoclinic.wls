@@ -16,4 +16,6 @@ f = ElasticEnergy[mono]
 cj = {c11, c22, c33, c12, c13, c23, c44, c55, c66, c16, c26, c36, c45
     };
 
+Length[cj] == 13
+
 S[f, cj] // MatrixForm

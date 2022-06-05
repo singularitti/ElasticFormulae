@@ -8,11 +8,13 @@ SetDirectory[NotebookDirectory[]];
 <<sij`
 
 cubic = {{c11, c12, c12, 0, 0, 0}, {0, c11, c12, 0, 0, 0}, {0, 0, c11,
-       0, 0, 0}, {0, 0, 0, c44, 0, 0}, {0, 0, 0, 0, c44, 0}, {0, 0, 0, 0, 0,
-       c44}} // Symmetrise
+        0, 0, 0}, {0, 0, 0, c44, 0, 0}, {0, 0, 0, 0, c44, 0}, {0, 0, 0, 0, 0,
+        c44}} // Symmetrise
 
 f = ElasticEnergy[cubic]
 
 cj = {c11, c12, c44};
+
+Length[cj] == 3
 
 S[f, cj] // MatrixForm

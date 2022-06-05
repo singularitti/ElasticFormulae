@@ -15,4 +15,6 @@ cj = {c11, c33, c12, c13, c44, c66};
 
 f = ElasticEnergy[tet]
 
+Length[cj] == 6
+
 S[f, cj] // MatrixForm

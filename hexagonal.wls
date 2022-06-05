@@ -15,4 +15,6 @@ f = ElasticEnergy[hex]
 
 cj = {c11, c33, c12, c13, c44};
 
+Length[cj] == 5
+
 S[f, cj] // MatrixForm
