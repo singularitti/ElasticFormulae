@@ -10,10 +10,10 @@ Sij::usage = "Calculate S[i, j]."
 
 S::usage = "Calculate matrix S."
 
-Begin["Private`"]
+Begin["`Private`"]
 
-\[Epsilon] = {\[Epsilon]1, \[Epsilon]2, \[Epsilon]3, \[Epsilon]4, \[Epsilon]5,
-     \[Epsilon]6};
+\[Epsilon] = {Global`\[Epsilon]1, Global`\[Epsilon]2, Global`\[Epsilon]3,
+     Global`\[Epsilon]4, Global`\[Epsilon]5, Global`\[Epsilon]6};
 
 Symmetrise[upperTriMatrix_] :=
     UpperTriangularize[upperTriMatrix, 1] + Transpose[upperTriMatrix]
